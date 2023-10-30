@@ -4,5 +4,5 @@ RUN pip install setuptools
 COPY . code
 WORKDIR /code
 EXPOSE 8000
-ENTRYPOINT ["python", "mysite/manage.py"]
+ENTRYPOINT ["python", "book_rental/manage.py"]
 CMD ["runserver", "0.0.0.0:8000"]
